@@ -48,8 +48,7 @@ class CrearCuenta extends Page{
     
 
 
-
-
+    /*
 
     public get botonCrearCuentaEmpresarial () {
         return $('.//button[@id="second-button"]');
@@ -74,7 +73,7 @@ class CrearCuenta extends Page{
     }
 
     
-
+*/
 
 
 
