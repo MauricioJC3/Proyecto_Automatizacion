@@ -10,17 +10,17 @@ class AgregarProductosCarrito extends Page {
     }
 
     public get precioDelProductoAgregar() {
-        return $('.//div[@id="price"]//span[@class="andes-money-amount__fraction"]');
+        return $('.//span[@class="andes-money-amount__fraction"]');
                                     // contenido con valor como precio :: .//div[@id="price"]//meta[@content="1990000"]
     }
 
 
     public get cantidadDeProductoAgregar () {
-        return $('.//div[@id="available_quantity"]//button[@id="quantity-selector"]');
+        return $('.//span[@class="ui-pdp-buybox__quantity__selected"]');
     }
 
     public get  botonAgregarProductoAlCarrrito () {
-        return $('.//button[@id=":Rj6l1d9hm:"]');
+        return $('.//button[@class="andes-button andes-spinner__icon-base ui-pdp-action--secondary andes-button--quiet"]');
     }
 
 }

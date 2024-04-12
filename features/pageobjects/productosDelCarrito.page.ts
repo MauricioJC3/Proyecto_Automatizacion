@@ -9,7 +9,7 @@ class ProductosDelCarrito  extends Page {
     */
 
     public get validarNombreDelProductoApartadoCarrito (){
-        return $('.//div[@class="item-title"]');
+        return $('.//section[@class="item-row"]');
     }
 
     public get validarPrecioTotalProductoApartadoCarrito () {
