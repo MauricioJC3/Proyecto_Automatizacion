@@ -1,19 +1,21 @@
-Feature: Registro Personal en Mercado Libre
+Feature: Registro en Mercado Libre
 
-Scenario Outline: Registro con Datos Válidos y Datos Inválidos
+Scenario: Crear una cuenta en Mercado Libre
     Given que el usuario está en la página de registro de Mercado Libre
-    When el usuario ingresa sus datos personales:
-      | nombre    | apellido  | correo                | contraseña    | 
-      | <nombre>  | <apellido>| <correo>              | <contraseña>  |
-    And el usuario selecciona la opción de registrarse
-    Then el usuario debería ver un mensaje que dice "<mensaje>"
-    
+    When el usuario hace clic en el botón "Agregar email"
+    And el usuario ingresa su dirección de correo electrónico en el campo correspondiente
+    And el usuario acepta los términos y condiciones
+    And el usuario hace clic en "Continuar"
+    And el usuario elige un nombre de usuario
+    And el usuario ingresa su nombre y apellido en los campos correspondientes
+    And el usuario captura su nombre y apellido
+    And el usuario agrega un número de teléfono en el campo correspondiente
+    And el usuario captura su número de teléfono
+    And el usuario hace clic en "Ingresar contraseña"
+    And el usuario ingresa y confirma su contraseña en los campos correspondientes
+    And el usuario hace clic en "Continuar"
+    Then el usuario debería ver "<Mensaje>"
+
 Examples:
-  | nombre    | apellido  | correo             | contraseña     | mensaje                                         |
-  | Juan      | Pérez     | juan@example.com   | contraseña123  | ¡Bienvenido, cliente!                           |
-  |           |           | correo_inválido    | contraseña123  | Por favor ingresa un correo válido.             |
-  | Juan      | Pérez     | correo@example.com | contraseña123  | El correo electrónico ya está registrado.       |
-  | Juan      |           | juan@example.com   | contraseña123  | Por favor ingresa tu apellido.                  |
-  | Juan      | Pérez     | juan@example.com   | contraseña     | La contraseña debe tener al menos 8 caracteres. |
-  | Juan      | Pérez     | juan@example.com   | contraseña*123 | Caracteres no permitidos en la contraseña.      |
-  | Juan      | Pérez     | juan@example.com   | contraseña/123 | Caracteres no permitidos en la contraseña.      |
+  | correo               | nombre   | apellido  | telefono      | contraseña  | Mensaje                       |
+  | usuario1@example.com | Juan     | Pérez     | 123456789     | password123 | se ha registrado exitosamente |

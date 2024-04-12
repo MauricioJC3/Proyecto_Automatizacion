@@ -18,8 +18,12 @@ class CrearCuenta extends Page{
         return $('.//input[@id="email-without-android"]');
     }
 
+    public get inputAceptatTerminos () {
+        return $('.//input[@id="policies"]');
+    }
+
     public get botonContinuarEmail () {
-        return $('.//button[@id=":R1ld9:"]');
+        return $('.//button[@id=":R1td9:"]'); // alternativa .//button[@type="submit"]
     }
 
     public get botonElegirNombre () {
@@ -44,6 +48,22 @@ class CrearCuenta extends Page{
 
     public get inputCapturarTelefono () {
         return $('.//button[@id=":R2ot1:"]');
+    }
+
+    public get botonIngresarContraseña () {
+        return $('.//button[@id="hub-item-button"]');
+    }
+
+    public get inputCapturarContraseña () {
+        return $('.//input[@id="enter-password"]');
+    }
+
+    public get inputConfirmarContraseña () {
+        return $('.//input[@id="confirm-password"]');
+    }
+
+    public get botonContinuar () {
+        return $('.//button[@type="button"]'); // .//button[@id=":R3d9:"]
     }
     
 

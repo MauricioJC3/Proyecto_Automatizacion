@@ -6,9 +6,8 @@ When el usuario ingresa su correo electrónico "<email>" y su contraseña "<pass
 Then el usuario debería ver el mensaje "<message>"
 
 Examples:
-| email                | password         | message                            |
-|usuario@example.com   | contraseña123    | ¡Bienvenido, cliente!              |
-|usuario@example.com   | incorrecta123    | Correo o contraseña incorrectos.   |
-|incorrecto@example.com| contraseña123    | Correo o contraseña incorrectos.   |
-|usuario@example.com   | contraseña*123   | Caracteres no permitidos.          |
-|usuario@example.com   | contraseña/123   | Caracteres no permitidos.          |
+| email                | password         | message                                          |
+|esteban@example.com   | contraseña123    | ¡Bienvenido, cliente!                            |
+|incorrecto@example.com| contraseña123    | Correo o contraseña incorrectos.                 |
+|usuario_example.com   | contraseña123    | Ingrese un correo valido                         |
+|usuario@example.com   | con              | Ingrese una contraseña con mínimo 8 caracteres.  |
