@@ -1,6 +1,6 @@
 import Page from "./page";
 
-class CrearCuenta extends Page{
+export class CrearCuenta extends Page{
 
     public get botonCrearCuenta () {
         return $('.//a[@data-link-id="registration"]');
@@ -10,13 +10,13 @@ class CrearCuenta extends Page{
         return $('.//button[@id="first-button"]');
     }
     
-    public get botonAgregarEmail () {
-        return $('.//button[@id="hub-item-button"]');
-    }
+
 
     public get inputAgregarEmail () {
-        return $('.//input[@id="email-without-android"]');
+        return $('.//input[@id=""]');
     }
+
+    BTN_AGREGAR = (opcionBtn: string) => './/span[contains(text(),"${opcionBtn}")]';
 
     public get inputAceptatTerminos () {
         return $('.//input[@id="policies"]');
@@ -26,9 +26,6 @@ class CrearCuenta extends Page{
         return $('.//button[@id=":R1td9:"]'); // alternativa .//button[@type="submit"]
     }
 
-    public get botonElegirNombre () {
-        return $('.//button[@id="hub-item-button"]');
-    }
 
     public get inputEscribirNombre () {
         return $('.//input[@id=":r0:"]');
