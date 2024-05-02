@@ -3,8 +3,10 @@ Feature: Registro en Mercado Libre
 Scenario: Crear una cuenta en Mercado Libre
     Given que el usuario está en la página de registro de Mercado Libre
     When el usuario hace clic en el botón "Agregar"
-    When el usuario hace clic en el botón "Elegir"
     And el usuario ingresa su dirección de correo electrónico en el campo correspondiente
+    And el usuario acepte los términos y condiciones
+    And el usuario hace clic en "Continuar"
+    And el usuario hace clic en el botón "Elegir"
     And el usuario acepta los términos y condiciones
     And el usuario hace clic en "Continuar"
     And el usuario elige un nombre de usuario
