@@ -9,7 +9,6 @@ Scenario: Crear una cuenta en Mercado Libre
     And el usuario hace clic en el botón "Elegir"
     And el usuario acepta los términos y condiciones
     And el usuario hace clic en "Continuar"
-    And el usuario elige un nombre de usuario
     And el usuario ingresa su nombre y apellido en los campos correspondientes
     And el usuario captura su nombre y apellido
     And el usuario agrega un número de teléfono en el campo correspondiente
