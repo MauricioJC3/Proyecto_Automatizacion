@@ -11,12 +11,12 @@ export class CrearCuenta extends Page{
     }
     
 
+    BTN_AGREGAR = (opcionBtn: string) => './/span[contains(text(),"${opcionBtn}")]';
 
     public get inputAgregarEmail () {
         return $('.//input[@id=""]');
     }
 
-    BTN_AGREGAR = (opcionBtn: string) => './/span[contains(text(),"${opcionBtn}")]';
 
     public get inputAceptatTerminos () {
         return $('.//input[@id="policies"]');
@@ -26,14 +26,8 @@ export class CrearCuenta extends Page{
         return $('.//button[@id=":R1td9:"]'); // alternativa .//button[@type="submit"]
     }
 
+    INPUT_AGREGAR = (opcionInput: string) => '// input[contains (text (),"${opcionInput}")]';
 
-    public get inputEscribirNombre () {
-        return $('.//input[@id=":r0:"]');
-    }
-
-    public get inputEscribirApellido () {
-        return $('.//input[@id=":r1:"]');
-    }
 
     public get botonCapturarNombreApellido () {
         return $('.//button[@id=":r2:"]');
