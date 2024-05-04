@@ -45,44 +45,29 @@ export class CrearCuenta extends Page{
         return $('.//button[@id="hub-item-button"]');
     }
 
-    public get inputCapturarContraseña () {
+
+    INPUT_CONTRASEÑA = (opcionContraseña: string) => '// input[contains (text (),"${opcionContraseña}")]';
+
+    public get botonContinuar () {
+        return $('.//button[@type="button"]'); // .//button[@id=":R3d9:"]
+    }
+
+    BTN_CONTINUAR = (opcionContinuar: string) => './/span[contains(text(),"${opcionContinuar}")]';
+    
+
+
+
+    /*
+
+    // Localizadores Campos de Contraseña Y Validar Contraseña
+
+        public get inputCapturarContraseña () {s
         return $('.//input[@id="enter-password"]');
     }
 
     public get inputConfirmarContraseña () {
         return $('.//input[@id="confirm-password"]');
     }
-
-    public get botonContinuar () {
-        return $('.//button[@type="button"]'); // .//button[@id=":R3d9:"]
-    }
-    
-
-
-    /*
-
-    public get botonCrearCuentaEmpresarial () {
-        return $('.//button[@id="second-button"]');
-    }
-
-
-    public get inputAgregarEmailEmpresarial(){
-        return $('.//button[@id="email-without-android"]');
-    }
-
-
-    public get  botonCpturarEmailEmpresarial(){
-        return $('.//button[@id=":R1ld9:"]');
-    }
-
-    public get inputAgregarNitEmpresa(){
-        return $('.//input[@id=":r0:"]');
-    }
-
-    public get botonCapturarNitEmpresa(){
-        return $('.//button[@id=":r1:"]');
-    }
-
     
 */
 
