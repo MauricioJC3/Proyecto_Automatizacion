@@ -13,7 +13,7 @@ Scenario: Crear una cuenta en Mercado Libre
     And el usuario ingresa su numero de telefono
     And el usuario acepta los términos y condiciones
     And el usuario hace clic en "Enviar código por WhatsApp"
-    And el usuario hace clic en "Ingresar contraseña"
+    And el usuario hace clic en el botón "Ingresar contraseña"
     And el usuario ingresa su "ingresa contraseña" y "confirmar contraseña" 
     And el usuario hace clic en "Continuar"
     Then el usuario debería ver "<Mensaje>"
